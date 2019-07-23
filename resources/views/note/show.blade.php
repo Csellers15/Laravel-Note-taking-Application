@@ -8,7 +8,7 @@
       <p class="mainText">{{$note->body}}</p>
       <p class="secondaryText">Created on: <br> {{$note->created_at}}</p>
 
-        <a href="/note/{{$note->id}}/edit"> <button type="button" class="btn btn-primary btn-block">Edit Note</button></a>
+        <a class="editBtn" href="/note/{{$note->id}}/edit"> <button type="submit" class="btn btn-primary btn-block">Edit Note</button></a>
         <form action="{{ route('note.destroy', $note->id)}}" method="post">
           @csrf
           @method('DELETE')

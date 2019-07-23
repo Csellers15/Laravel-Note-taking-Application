@@ -10652,12 +10652,20 @@ a.text-dark:focus {
   font-size: 10px;
 }
 
-a {
+.bg-grey {
+  background-color: #CDCDCD;
+}
+
+a,
+a:hover {
   color: #000000;
+}
+
+a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #FFF;
+.editBtn {
+  text-decoration: none !important;
 }
 
